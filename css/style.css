@@ -160,7 +160,7 @@ main{
 }
 /* discovery */
 .discovery{
-    background: url(/imagens/bg-image.jpg) no-repeat;
+    background: url(../imagens/bg-image.jpg) no-repeat;
     background-size: 100%;
     display: flex;
     justify-content: center;
@@ -309,7 +309,7 @@ main{
     }
     /* discovery */
     .discovery{
-        background: url(/imagens/bg-image.png) no-repeat;
+        background: url(../imagens/bg-image.png) no-repeat;
         background-size: 100%;
         display: flex;
         justify-content: center;
@@ -326,4 +326,5 @@ main{
         margin-bottom: 35px;
         width: 90%;
     }
+    #products{display: none;}
 }
