@@ -139,6 +139,12 @@ header .container{
     justify-content: space-between;
     padding: 20px 0;
 }
+h1{
+    display: block;
+    overflow: hidden;
+    width: 126px;
+    height: 34px;
+}  
 nav ul{
     gap: 6px;
 }
@@ -246,11 +252,12 @@ main{
         flex-direction: column;
         gap: 10px;
         margin-left: 10px;
-    }
+    }  
     #btn{
         cursor: pointer;
         display: flex;
-        gap: 10px
+        gap: 10px;
+        width: 32px;
     }
     .burg{
         border: solid #272727;
@@ -260,6 +267,7 @@ main{
         position: absolute;
         transition: 1s ease all;
     }
+    .btn-close{width: 32px;}
     .btn-close div:first-child .burg{
         top: 40px;
         transform: rotate(-45deg);
@@ -304,13 +312,9 @@ main{
         margin-right: 10px;
     }
     h1{
-        transform: translate(20%, 0);
+        transform: translate(10%, 0);
     }
-
-    /* main */
-    main{
-        position: relative;
-    }
+    
     /* discovery */
     .discovery{
         background: url(../imagens/bg-image.png) no-repeat;
