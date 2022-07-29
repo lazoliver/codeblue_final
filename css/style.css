@@ -189,7 +189,7 @@ main{
 .discovery > article h2{
     font: 500 40px/58px 'Poppins';
 }
-.discovery > article h4{
+.discovery > article h3{
     font: 400 18px/26px 'Poppins';
     margin-bottom: 45px;
     text-align: center;
@@ -330,7 +330,7 @@ main{
         text-align: center;
         top: 228px;
     }
-    .discovery > article h4{
+    .discovery > article h3{
         font: 400 18px/20px 'Poppins';
         margin-bottom: 35px;
         width: 90%;
