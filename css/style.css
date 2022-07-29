@@ -211,8 +211,31 @@ main{
         align-items: center;
         display: flex;
     }
-    /* d-block */
-    .botao{display: block;}
+    /* btn */
+    header .container > div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .burg{
+        border: solid #272727;
+        border-width: 2px 16px;
+        content: "";
+        display: block;
+        position: absolute;
+        transition: 1s ease all;
+    }
+    .btn-close div:first-child .burg{
+        top: 40px;
+        transform: rotate(-45deg);
+    }
+    .btn-close div:nth-child(2) .burg{display: none;}
+    .btn-close div:last-child .burg{
+        top: 40px;
+        transform: rotate(45deg);
+    }
+    
     /* header */
     header{
         padding: 0 15px;
@@ -244,8 +267,12 @@ main{
     }
     header article:last-child ul{
         gap: 15px;
+        margin-right: 10px;
     }
-    
+    h1{
+        transform: translate(20%, 0);
+    }
+
     /* main */
     main{
         position: relative;

@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $(".botao").click(function() {
+    $("#btn").click(function() {
         $("nav").toggleClass("dropdown");
+        $("#btn").toggleClass("btn-close")
     });
 });
