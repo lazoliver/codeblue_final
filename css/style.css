@@ -118,7 +118,7 @@ input::placeholder{color: rgba(0, 0, 0, 0.5);}
     margin: 0 auto
 }
 /* d-none */
-.botao{display: none;}
+#btn{display: none;}
 
 /* d-flex / align-center */
 header .container, header ul{
@@ -157,7 +157,6 @@ header article:last-child ul{
 /* main */
 main{
     position: relative;
-    z-index: -1;
 }
 /* discovery */
 .discovery{
@@ -167,7 +166,7 @@ main{
     justify-content: center;
     padding: 370px 0;
 }
-.discovery article{
+.discovery > article{
     align-items: center;
     background: rgba(247, 248, 250, .8);
     backdrop-filter: blur(5px);
@@ -187,7 +186,7 @@ main{
     font: 400 18px/26px 'Poppins';
     margin-bottom: 45px;
     text-align: center;
-    width: 80%;
+    width: 85%;
 }
 .discovery > article p{
     background: #56B280;
@@ -198,6 +197,36 @@ main{
     display: flex;
     font: 500 21px/24px 'Roboto';
     padding: 8px 44px;
+    position: relative;
+    z-index: 99;
+}
+/* products */
+.products{margin: 90px 0 125px;}
+.products > article{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.products h2{
+    color: #0B254B;
+    font: 500 40px/58px 'Poppins';
+    margin-bottom: 15px;
+}
+.products h4{
+    color: #5E6E89;
+    font: 500 18px/28px 'Poppins';
+}
+.products > section{
+    display: grid;
+    gap: 30px;
+}
+.grid{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid div{
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
