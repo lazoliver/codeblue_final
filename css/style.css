@@ -247,6 +247,11 @@ main{
         gap: 10px;
         margin-left: 10px;
     }
+    #btn{
+        cursor: pointer;
+        display: flex;
+        gap: 10px
+    }
     .burg{
         border: solid #272727;
         border-width: 2px 16px;
