@@ -310,7 +310,6 @@ main{
     /* main */
     main{
         position: relative;
-        z-index: -1;
     }
     /* discovery */
     .discovery{
