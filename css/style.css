@@ -195,11 +195,11 @@ main{
     text-align: center;
     width: 85%;
 }
-.discovery > article p{
+.discovery > article p, .products .container > p{
     background: #56B280;
     border-radius: 4px;
 }
-.discovery > article a{
+.discovery > article a, .products .container > p a{
     color: #fff;
     display: flex;
     font: 500 21px/24px 'Roboto';
@@ -226,14 +226,53 @@ main{
     display: grid;
     gap: 30px;
 }
-.grid{
-    display: grid;
-    gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.grid div{
+.store{
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.store div{
+    position: relative;
+    min-height: 230px;
+    min-width: 255px;
+}
+.store div > a{
+    display: block;
+    box-shadow: 0px 0px 24px 1px rgba(123, 123, 123, 0.15);
+    min-height: 230px;
+    min-width: 255px;
+    position: absolute;
+    transform: translate(0, 0);
+    transition: 1s ease all;
+}
+.store div > a:hover{
+    display: block;
+    box-shadow: 0px 25px 24px 15px rgb(10 10 1 / 10%);
+    position: absolute;
+    min-height: 230px;
+    transform: translate(0, -5%);
+    transition: 1.5s ease all;
+  }
+.store figure{
+    background: rgba(247, 248, 250, .8) ;
+}
+.store article{
+    background: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 26px 16px;
+    position: absolute;
+}
+.store article p:first-child{
+    color: #1D293F;
+    font: 500 16px/28px 'Poppins'
+}
+.store article p:last-child{
+    color: #56B280;
+    font: 500 20px/28px 'Roboto';
+    text-align: end;
 }
 
 @media screen and (max-width: 768px) {
@@ -335,5 +374,19 @@ main{
         margin-bottom: 35px;
         width: 90%;
     }
-    #products{display: none;}
+    /* products */
+    .products > article {
+        margin-bottom: 69px;
+    }
+    .products{
+        margin: 50px 0 0;
+    }
+    .store{
+        max-height: 1040px;
+        overflow: hidden;
+    }
+    .store div{width: 100vw;}
+    .products .container > p a{
+        justify-content: center;
+    }
 }
