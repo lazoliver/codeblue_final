@@ -383,13 +383,18 @@ main{
         margin: 0;
         padding: 50px 0 72px;
     }
-    .store{
+    .products > section {
         max-height: 1010px;
         overflow: hidden;
+    }
+    .products > .store-mobile{
+        max-height: 2050px;
+        overflow: visible;
     }
     .products .container:last-child{
         display: flex;
         justify-content: center;
         margin-top: 54px;
     }
+    #see-less{display: none;}
 }
