@@ -367,6 +367,7 @@ footer > section:first-child{
     padding: 60px 0 115px;
 }
 footer .container:first-child{
+    border-top: 1.5px solid #FFFFFF;
     display: flex;
     justify-content: space-between;
 }
@@ -398,6 +399,7 @@ footer li > ul a{
     color: #E1E1E1;
     font: 500 16px/29px 'Poppins';
 }
+/* copyright */
 footer > section:last-child{
     padding: 26px 0;
 }
@@ -596,4 +598,21 @@ footer span{font-weight: bold;}
     }
     /* top sellers */
     .top-sellers{padding: 34px 0 63px;}
+    /* footer */
+    footer > section:first-child{padding: 31px 0 85px;}
+    footer > section:first-child .container{
+        display: block;
+    }
+    footer section > article:first-child{
+        max-width: 100%;
+    }
+    footer .container > ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer .container:first-child{
+        display: flex; justify-content: center;
+    }
+    footer > section:last-child p:last-child{display: none;}
 }
