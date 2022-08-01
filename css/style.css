@@ -533,4 +533,16 @@ h4{
         top: 180px;
     }
     /* testimonials */
+    .testimonials{padding: 87px 0 121px}
+    .testimonials figure{margin-bottom: 17px;}
+    .testimonials article > article{gap: 5px;}
+    .testimonials .container > article{margin-bottom: 48px;}
+    .testimonials .container > section{
+        gap: 24px;
+        overflow: scroll;
+    }
+    .testimonials .container > section > article{
+        display: flex;
+        min-width: 100%;
+    }
 }
