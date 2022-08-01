@@ -398,6 +398,14 @@ footer li > ul a{
     color: #E1E1E1;
     font: 500 16px/29px 'Poppins';
 }
+footer > section:last-child{
+    padding: 26px 0;
+}
+footer > section:last-child p{
+    color: #5E6E89;
+    font: 400 16px/28px 'Poppins'
+}
+footer span{font-weight: bold;}
 
 @media screen and (max-width: 768px) {
 
