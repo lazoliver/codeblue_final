@@ -596,6 +596,13 @@ footer span{font-weight: bold;}
         display: flex;
         min-width: 100%;
     }
+    /* store */
+    .store{display: block;}
+    .store div{margin-bottom: 30px;}
+    .store div > a{width: 100%}
+    .store div figure{
+        display: flex;
+        justify-content: center;}
     /* top sellers */
     .top-sellers{padding: 34px 0 63px;}
     /* footer */
@@ -607,12 +614,15 @@ footer span{font-weight: bold;}
         max-width: 100%;
     }
     footer .container > ul{
-        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: 52px;
     }
     footer .container:first-child{
         display: flex; justify-content: center;
+    }
+    footer li ul{
+        margin-top: 20px;
     }
     footer > section:last-child p:last-child{display: none;}
 }
