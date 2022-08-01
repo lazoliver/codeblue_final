@@ -361,6 +361,44 @@ h4{
 .top-sellers{padding: 90px 0 70px;}
 .top-sellers > article{margin-bottom: 50px;}
 
+/* footer */
+footer > section:first-child{
+    background: #272727;
+    padding: 60px 0 115px;
+}
+footer .container:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+footer section > article:first-child{
+    max-width: 24%;
+}
+footer section:first-child p{
+    color: #fff;
+    font: 400 16px/23px 'Poppins';
+    letter-spacing: -0.05px;
+}
+footer figure{
+    margin: 16px 0 21px;
+}
+footer .container > ul{
+    color: #56B280;
+    display: flex;
+    font: 500 16px/29px 'Roboto';
+    margin-top: 44px;
+}
+footer .container > ul > li{
+    min-width: 170px;
+}
+footer li ul{
+    margin-top: 25px;
+}
+footer li > ul li{margin-bottom: 20px;}
+footer li > ul a{
+    color: #E1E1E1;
+    font: 500 16px/29px 'Poppins';
+}
+
 @media screen and (max-width: 768px) {
 
     .container{
