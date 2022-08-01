@@ -210,16 +210,16 @@ main{
 }
 /* products */
 .products{margin: 90px 0 125px;}
-.products > article, .testimonials .container > article{
+.products > article, .testimonials .container > article, .top-sellers > article{
     margin-bottom: 60px;
     text-align: center;
 }
-.products h2, .testimonials h2{
+.products h2, .testimonials h2, .top-sellers h2{
     color: #0B254B;
     font: 500 40px/58px 'Poppins';
     margin-bottom: 15px;
 }
-.products h3, .testimonials h3{
+.products h3, .testimonials h3, .top-sellers h3{
     color: #5E6E89;
     font: 500 18px/28px 'Poppins';
 }
@@ -545,4 +545,6 @@ h4{
         display: flex;
         min-width: 100%;
     }
+    /* top sellers */
+    .top-sellers{padding: 34px 0 63px;}
 }
