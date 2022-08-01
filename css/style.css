@@ -118,7 +118,7 @@ input::placeholder{color: rgba(0, 0, 0, 0.5);}
     margin: 0 auto
 }
 /* d-none */
-#btn{display: none;}
+#btn, .products .container:last-child{display: none;}
 
 /* d-flex / align-center */
 header .container, header ul{
@@ -195,12 +195,12 @@ main{
     text-align: center;
     width: 85%;
 }
-.discovery > article p, .products .container > a{
+.discovery > article a, .products .container > a, .about a{
     background: #56B280;
     border-radius: 4px;
     width: fit-content;
 }
-.discovery > article a, .products .container > a{
+.discovery > article a, .products .container > a, .about a{
     color: #fff;
     display: flex;
     font: 500 21px/24px 'Roboto';
@@ -275,6 +275,41 @@ main{
     font: 500 20px/28px 'Roboto';
     text-align: end;
 }
+/* about */
+.about{
+    background: #F7F8FA;
+    padding: 133px 0 102.5px;
+}
+.about .container{
+    display: flex;
+    justify-content: space-between;
+}
+.about h2{
+    color: #1D252C;
+    font: 500  40px/47px 'Poppins';
+    margin-bottom: 15px;
+    width: 61%;
+}
+.about article:first-child p{
+    color: #56B280;
+    font: 400 16px/23px 'Poppins';
+    margin-bottom: 38px;
+}
+.about ul li{
+    font: 500 16px/29px 'Poppins';
+    margin-top: 10px;
+}
+.about ul li:before{
+    content: url(../imagens/verified.png);
+}
+.about a{
+    margin-top: 68px
+}
+.about figure{
+    background: url(../imagens/about.png)no-repeat;
+    min-height: 550px;
+    min-width: 540px;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -313,7 +348,7 @@ main{
         top: 40px;
         transform: rotate(-45deg);
     }
-    .btn-close div:nth-child(2) .burg{display: none;}
+    .btn-close div:nth-child(2) .burg, #see-less{display: none;}
     .btn-close div:last-child .burg{
         top: 40px;
         transform: rotate(45deg);
@@ -384,7 +419,7 @@ main{
         padding: 50px 0 72px;
     }
     .products > section {
-        max-height: 1010px;
+        max-height: 1020px;
         overflow: hidden;
     }
     .products > .store-mobile{
@@ -396,5 +431,58 @@ main{
         justify-content: center;
         margin-top: 54px;
     }
-    #see-less{display: none;}
+    /* about */
+    .about{
+        background: #F7F8FA;
+        padding: 119px 0 45px;
+        min-height: 973px;        
+    }
+    .about .container{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .about .container > article{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .about h2{
+        color: #1D252C;
+        font: 500  40px/47px 'Poppins';
+        text-align: center;
+        width: 100%;
+    }
+    .about p{
+        color: #56B280;
+        font: 400 16px/23px 'Poppins';
+        text-align: center;
+    }
+    .about ul{
+        bottom: -555px;
+        position: absolute;
+    }
+    .about ul li{
+        font: 500 16px/29px 'Poppins';
+        margin-top: 10px;
+    }
+    .about ul li:before{
+        content: url(../imagens/verified.png);
+    }
+    .about a{
+        display: flex;
+        position: absolute;
+        bottom: -639px;
+    }
+    .about figure{
+        background: #fff url(../imagens/about-mobile.png)no-repeat;
+        width: fit-content;
+        min-height: 241px;
+        min-width: 345px;
+    }
+    .about .container article:last-child{
+        position: absolute;
+        top: 180px;
+    }
 }
