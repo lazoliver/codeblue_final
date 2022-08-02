@@ -167,11 +167,13 @@ main{
 }
 /* discovery */
 .discovery{
-    background: url(../imagens/bg-image.jpg) no-repeat;
-    background-size: 100%;
     display: flex;
     justify-content: center;
-    padding: 370px 0;
+    position: relative;
+}
+picture img, picture source{
+    width: 100vw;
+    max-width: 100%;
 }
 .discovery > article{
     align-items: center;
@@ -182,9 +184,9 @@ main{
     flex-direction: column;
     justify-content: center;
     max-width: 730px;
-    padding: 33px 0 63px;
+    padding: 33px 96px 63px;
     position: absolute;
-    top: 250px;
+    top: 30%;
 }
 .discovery > article h2{
     font: 500 40px/58px 'Poppins';
@@ -193,7 +195,6 @@ main{
     font: 400 18px/26px 'Poppins';
     margin-bottom: 45px;
     text-align: center;
-    width: 85%;
 }
 .discovery > article a, .products .container > a, .about a{
     background: #56B280;
@@ -330,7 +331,6 @@ main{
     flex-direction: column;
     max-width: 350px;
     overflow: hidden;
-    
 }
 .testimonials figure{
     align-items: center;
@@ -491,11 +491,8 @@ footer span{font-weight: bold;}
     
     /* discovery */
     .discovery{
-        background: url(../imagens/bg-image.png) no-repeat;
-        background-size: 100%;
         display: flex;
         justify-content: center;
-        padding: 390px 0;
     }
     .discovery article{
         margin: 0 15px;
