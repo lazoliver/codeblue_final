@@ -3,6 +3,9 @@ $(document).ready(function() {
         $("nav").toggleClass("dropdown");
         $("#btn").toggleClass("btn-close")
     });
+    $("#dropdown").click(function() {
+        $("#dropdown").toggleClass("open");
+    });
     $("#see-more").click(function() {
         $("#show-more").addClass("store-mobile");
         $("#see-more").hide();
