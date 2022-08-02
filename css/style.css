@@ -171,7 +171,7 @@ main{
     justify-content: center;
     position: relative;
 }
-.discovery > picture img, .discovery > picture source{
+.discovery > figure img, .discovery > figure source{
     width: 100vw;
     max-width: 100%;
 }
@@ -564,12 +564,6 @@ footer span{font-weight: bold;}
         display: flex;
         position: absolute;
         bottom: -639px;
-    }
-    .about figure{
-        background: #fff url(../imagens/about-mobile.png)no-repeat;
-        width: fit-content;
-        min-height: 241px;
-        min-width: 345px;
     }
     .about .container article:last-child{
         position: absolute;
