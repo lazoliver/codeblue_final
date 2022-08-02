@@ -171,7 +171,7 @@ main{
     justify-content: center;
     position: relative;
 }
-picture img, picture source{
+.discovery > picture img, .discovery > picture source{
     width: 100vw;
     max-width: 100%;
 }
@@ -305,11 +305,6 @@ picture img, picture source{
 }
 .about a{
     margin-top: 68px
-}
-.about figure{
-    background: url(../imagens/about.png)no-repeat;
-    min-height: 550px;
-    min-width: 540px;
 }
 /* testimonials */
 .testimonials{
