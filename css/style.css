@@ -621,5 +621,6 @@ footer span{font-weight: bold;}
     footer li ul{
         margin-top: 20px;
     }
+    /* copyright */
     footer > section:last-child p:last-child{display: none;}
 }
