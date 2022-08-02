@@ -1,10 +1,12 @@
 $(document).ready(function() {
     $("#btn").click(function() {
         $("nav").toggleClass("dropdown");
-        $("#btn").toggleClass("btn-close")
+        $("#btn").toggleClass("btn-close");
+        $(".expand").hide();
     });
-    $("#dropdown").click(function() {
-        $("#dropdown").toggleClass("open");
+    $("#expand").click(function() {
+        $("#expand").toggleClass("open");
+        $(".expand").toggle();
     });
     $("#see-more").click(function() {
         $("#show-more").addClass("store-mobile");

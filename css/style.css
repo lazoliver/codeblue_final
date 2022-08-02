@@ -118,7 +118,7 @@ input::placeholder{color: rgba(0, 0, 0, 0.5);}
     margin: 0 auto
 }
 /* d-none */
-#btn, .products .container:last-child{display: none;}
+#btn, .products .container:last-child, .expand{display: none;}
 
 /* d-flex / align-center */
 header .container, header ul{
@@ -145,13 +145,13 @@ h1{
     width: 126px;
     height: 34px;
 }
-nav > ul li:first-child a::after{
+nav > ul > li:first-child > a::after{
     content: url(../imagens/dropdown-icon.png);
-    transition: 1s ease all;
+    transition: .5s ease all;
 }
 nav > ul li:first-child .open::after{
     transform: rotate(180deg);
-    transition: 1s ease all;
+    transition: .5s ease all;
 }
 nav ul{
     gap: 6px;
@@ -164,6 +164,18 @@ nav a{
     min-width: 129px;
     padding: 5px 25px;
     justify-content: center;
+}
+.expand{
+    background: #fff;
+    border: 1px solid #272727;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+}
+.expand > li a{
+    display: flex;
+    margin: 5px 0;
+    justify-content: flex-start;
 }
 header article:last-child ul{
     cursor: pointer;
@@ -450,7 +462,7 @@ footer span{font-weight: bold;}
         top: 40px;
         transform: rotate(-45deg);
     }
-    .btn-close div:nth-child(2) .burg, #see-less{display: none;}
+    .btn-close div:nth-child(2) .burg, #see-less, footer > section:last-child p:last-child, .expand{display: none;}
     .btn-close div:last-child .burg{
         top: 40px;
         transform: rotate(45deg);
@@ -489,6 +501,13 @@ footer span{font-weight: bold;}
         gap: 15px;
         margin-right: 10px;
     }
+    .expand{
+        border: none;
+        padding: 10px 0 0 25px;
+        position: relative;
+        top: 0;
+    }
+    .expand a{padding: 5px 0;}
     h1{
         transform: translate(10%, 0);
     }
@@ -619,6 +638,4 @@ footer span{font-weight: bold;}
     footer li ul{
         margin-top: 20px;
     }
-    /* copyright */
-    footer > section:last-child p:last-child{display: none;}
 }
