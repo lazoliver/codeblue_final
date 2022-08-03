@@ -128,6 +128,7 @@ header .container, header ul{
 /* header */
 header{
     background: #fff;
+    border-bottom: 1px solid rgba(86, 178, 128, 0.2);
     left: 0;
     right: 0;
     position: fixed;
@@ -425,6 +426,34 @@ footer > section:last-child p{
 }
 footer span{font-weight: bold;}
 
+/* product */
+.product > .container{
+    display: flex;
+    justify-content: space-between;
+}
+.product .container > section{margin: 122px 0 241px;}
+.product figure img{
+    background: #F7F8FA;
+    padding: 6px 18.5px;
+}
+.product section:first-child p{
+    font-size: 20px;
+    letter-spacing: -0.9px;
+    line-height: 26px;
+    text-align: center;
+}
+.product section:first-child p:first-child{
+    color: #272727;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+.product section:first-child p:last-child{
+    color: #56B280;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
 @media screen and (max-width: 768px) {
 
     .container{
@@ -552,14 +581,14 @@ footer span{font-weight: bold;}
     /* about */
     .about{
         background: #F7F8FA;
-        padding: 119px 0 45px;
-        min-height: 973px;        
+        min-height: 925px; 
+        padding: 119px 0 45px;   
+        position: relative;    
     }
     .about .container{
         align-items: center;
         display: flex;
         flex-direction: column;
-        position: relative;
     }
     .about .container > article{
         align-items: center;
@@ -578,7 +607,8 @@ footer span{font-weight: bold;}
         text-align: center;
     }
     .about ul{
-        bottom: -555px;
+        bottom: 120px;
+        padding: 0 15px;
         position: absolute;
     }
     .about ul li{
@@ -591,11 +621,11 @@ footer span{font-weight: bold;}
     .about a{
         display: flex;
         position: absolute;
-        bottom: -639px;
+        bottom: 45px;
     }
     .about .container article:last-child{
         position: absolute;
-        top: 180px;
+        top: 289px;
     }
     /* testimonials */
     .testimonials{padding: 87px 0 121px}
