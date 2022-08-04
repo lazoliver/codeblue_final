@@ -427,31 +427,114 @@ footer > section:last-child p{
 footer span{font-weight: bold;}
 
 /* product */
-.product > .container{
+.product, footer{width: 100vw;}
+.product{
+    padding: 122px 0 114px;
+}
+.product .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+.product figure img{
+    background: #F7F8FA;
+    margin: 0 0 17px;
+    padding: 32px 5px 5px 7px;
+}
+.product h2{
+    font: 500 26px/58px 'Poppins';
+    letter-spacing: -0.09px;
+}
+.product article p:first-child{
+    color: #272727;
+    font: 500 22px/26px 'Poppins';
+    letter-spacing: -0.9px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.product article p:last-child{
+    color: #56B280;
+    font: 700 20px/26px 'Roboto';
+    letter-spacing: -0.09px;
+    text-align: center;
+}
+.product-more{width: 100%;}
+.product-more > article{
     display: flex;
     justify-content: space-between;
 }
-.product .container > section{margin: 122px 0 241px;}
-.product figure img{
-    background: #F7F8FA;
-    padding: 6px 18.5px;
-}
-.product section:first-child p{
-    font-size: 20px;
+.product-more article article p:first-child{
+    color: #56B280;
+    font: 600 26px/58px 'Poppins';
     letter-spacing: -0.9px;
-    line-height: 26px;
+    margin-bottom: 23px;
+    text-align: left;
+}
+.product-more article article p:last-child{
+    color: #272727;
+    font: 400 18px/26px 'Roboto';
+    letter-spacing: -0.9px;
     text-align: center;
 }
-.product section:first-child p:first-child{
-    color: #272727;
-    font-family: 'Poppins';
-    font-weight: 500;
-    margin-bottom: 26px;
+form{
+    max-width: 350px;
 }
-.product section:first-child p:last-child{
+form div{
+    padding: 18px 20px
+}
+form div:nth-child(2){
+    border: 1px solid rgba(123, 123, 123, 0.15);
+    border-radius: 7px;
+    margin-bottom: 67px;
+}
+form label{font: 400 14px/16px 'Roboto';}
+form span{
+    display: block;
+    margin-top: 7px;
+    width: 88%;
+}
+input{margin: 0}
+form a{
+    align-items: center;
+    background: #56B280;
+    border: 1px solid #56B280;
+    border-radius: 4px;
+    color: #fff;
+    display: flex;
+    font: 400 20px/23px 'Roboto';
+    gap: 10px;
+    padding: 8px 93px;
+}
+form a::before{
+    content: url(../imagens/cart-w.png);
+}
+.product-more > ul{
+    border: 1px solid rgba(123, 123, 123, 0.15);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 22px;
+    margin-top: 40px;
+}
+.product-more li ul{
+    display: flex;
+    justify-content: space-between;
+}
+.product-more li span{
+    color: #1D252C;
+}
+.product-more li{
+    color: #849A8E;
+    font: 400 16px/26px 'Roboto';
+}
+.added{
+    background: #fff;
+    border: 1px solid #56B280;
     color: #56B280;
-    font-family: 'Roboto';
-    font-weight: 700;
+}
+.added::before{
+    content: url(../imagens/cart-g.png);
 }
 
 @media screen and (max-width: 768px) {
@@ -496,7 +579,6 @@ footer span{font-weight: bold;}
         top: 40px;
         transform: rotate(45deg);
     }
-    
     /* header */
     header{
         padding: 0 15px;
@@ -608,7 +690,7 @@ footer span{font-weight: bold;}
     }
     .about ul{
         bottom: 120px;
-        padding: 0 15px;
+        margin: 0 15px;
         position: absolute;
     }
     .about ul li{
@@ -667,5 +749,50 @@ footer span{font-weight: bold;}
     }
     footer li ul{
         margin-top: 20px;
+    }
+
+    /* product */
+    .product{
+        min-height: 1218px;
+        padding: 175px 0 61px;
+        position: relative;
+    }
+    .product figure img{max-width: 100%;}
+    .product h2{
+        left: 15px;
+        right: 0;
+        position: absolute;
+        top: 97px;
+    }
+    .product .container{
+        display: block;
+    }
+    .product .container section:first-child article{
+        bottom: 61px;
+        position: absolute;
+    }
+    .product-more article{
+        display: block;
+    }
+    .product-more article > article{
+        display: flex;
+        justify-content: space-between;
+    }
+    form div:nth-child(2){
+        margin-bottom: 25px;
+    }
+    .product-more article article p:first-child{
+        margin: 0;
+    }
+    .product-more > ul{
+        margin-top: 25px;
+    }
+    .product-more li{
+        line-height: 16px;
+    }
+    .product-more li ul{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
     }
 }

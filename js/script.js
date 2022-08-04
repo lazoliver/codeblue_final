@@ -19,4 +19,7 @@ $(document).ready(function() {
         $("#see-more").show();
         $("#see-less").hide();
     });
+    $("#add-to-cart").click(function() {
+        $("#add-to-cart").toggleClass("added");
+    });
 });
