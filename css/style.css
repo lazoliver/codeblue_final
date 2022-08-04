@@ -769,6 +769,8 @@ form a::before{
     }
     .product .container section:first-child article{
         bottom: 61px;
+        left: 0;
+        right: 0;
         position: absolute;
     }
     .product-more article, .product .container section:first-child, .product .container section:last-child{
