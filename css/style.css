@@ -427,7 +427,6 @@ footer > section:last-child p{
 footer span{font-weight: bold;}
 
 /* product */
-.product, footer{width: 100vw;}
 .product{
     padding: 122px 0 114px;
 }
@@ -503,6 +502,7 @@ form a{
     display: flex;
     font: 400 20px/23px 'Roboto';
     gap: 10px;
+    justify-content: center;
     padding: 8px 93px;
 }
 form a::before{
@@ -802,4 +802,5 @@ form a::before{
         flex-direction: column;
         gap: 7px;
     }
+    form{max-width: 100%;}
 }
