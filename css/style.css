@@ -771,12 +771,17 @@ form a::before{
         bottom: 61px;
         position: absolute;
     }
-    .product-more article{
-        display: block;
+    .product-more article, .product .container section:first-child, .product .container section:last-child{
+        display: flex;
+        flex-direction: column;
     }
     .product-more article > article{
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
+    }
+    form div:nth-child(1){
+        border: 1px solid #fff
     }
     form div:nth-child(2){
         margin-bottom: 25px;
