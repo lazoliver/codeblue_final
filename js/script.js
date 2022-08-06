@@ -5,8 +5,8 @@ $(document).ready(function() {
         $("#btn").toggleClass("btn-close");
         $(".expand").hide();
     });
-    $("#expand").click(function() {
-        $("#expand").toggleClass("open");
+    $("#drop").click(function() {
+        $("#drop").toggleClass("open");
         $(".expand").toggle();
     });
     $("#see-more").click(function() {
