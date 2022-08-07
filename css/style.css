@@ -479,15 +479,19 @@ footer span{font-weight: bold;}
 form{
     max-width: 350px;
 }
-form div{
+form li{
     padding: 18px 20px
 }
-form div:nth-child(2){
+form li:nth-child(2){
     border: 1px solid rgba(123, 123, 123, 0.15);
     border-radius: 7px;
     margin-bottom: 67px;
 }
-form label{font: 400 14px/16px 'Roboto';}
+form label{
+    color: #272727;
+    font: 400 14px/16px 'Roboto';
+    vertical-align: middle;
+}
 form span{
     display: block;
     margin-top: 7px;
@@ -802,10 +806,10 @@ form a::before{
         display: flex;
         flex-direction: row;
     }
-    form div:nth-child(1){
+    form li:nth-child(1){
         border: 1px solid #fff
     }
-    form div:nth-child(2){
+    form li:nth-child(2){
         margin-bottom: 25px;
     }
     .product-more article > article p:first-child{
