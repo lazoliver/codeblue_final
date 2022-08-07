@@ -829,4 +829,8 @@ form a::before{
     .product-more div > article{
         flex-direction: row;
     }
+    .product picture{
+        display: flex;
+        justify-content: center;
+    }
 }
