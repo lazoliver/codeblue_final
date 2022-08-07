@@ -269,7 +269,7 @@ main{
     min-width: 255px;
     position: absolute;
     transform: translate(0, 0);
-    transition: 1s ease all;
+    transition: .5s ease all;
 }
 .store div > a:hover{
     display: block;
@@ -277,7 +277,7 @@ main{
     position: absolute;
     min-height: 230px;
     transform: translate(0, -5%);
-    transition: 1.5s ease all;
+    transition: .5s ease all;
   }
 .store figure{
     background: rgba(247, 248, 250, .8) ;
