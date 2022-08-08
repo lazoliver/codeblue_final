@@ -748,14 +748,8 @@ form a::before{
     }
     /* store */
     .store{display: block;}
-    .store article{
-        bottom: -5px;
-    }
     .store div{margin-bottom: 30px;}
-    .store div > a{
-        min-height: 147px;
-        width: 100%
-    }
+    .store div > a{width: 100%}
     .store div figure{
         display: flex;
         justify-content: center;}
