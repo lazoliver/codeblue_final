@@ -375,7 +375,7 @@ h4{
     text-align: center;
     margin-bottom: 29px;
 }
-/* top sellers */
+/* popular */
 .top-sellers{padding: 90px 0 70px;}
 .top-sellers > article{margin-bottom: 50px;}
 
@@ -753,7 +753,7 @@ form a::before{
     .store div figure{
         display: flex;
         justify-content: center;}
-    /* top sellers */
+    /* popular */
     .top-sellers{padding: 34px 0 63px;}
     /* footer */
     footer > section:first-child{padding: 31px 0 85px;}
@@ -811,7 +811,7 @@ form a::before{
     form li:nth-child(2){
         margin-bottom: 25px;
     }
-    .product-more article > article p:first-child{
+    .product-more article > article > p:first-child{
         margin-right: 33%;
     }
     .product-more > ul{

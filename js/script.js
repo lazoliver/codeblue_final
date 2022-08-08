@@ -1,5 +1,4 @@
 $(document).ready(function() {
-        var x = 0;
     $("#btn").click(function() {
         $("nav").toggleClass("dropdown");
         $("#btn").toggleClass("btn-close");
